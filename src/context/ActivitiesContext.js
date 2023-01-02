@@ -27,9 +27,9 @@ const ActivitiesProvider = ({ children }) => {
   useEffect(() => {
     const getActivitiesFB = async () => {
       const res = await searchActivity(TODAY);
-      console.log(res);
+      //console.log(res);
       if (Object.entries(res).length === 0) {
-        console.log("No se encontro un registro de actividades de " + TODAY);
+        //console.log("No se encontro un registro de actividades de " + TODAY);
       } else {
         setActivities1(res.activities1);
         setActivities2(res.activities2);
@@ -59,7 +59,7 @@ const ActivitiesProvider = ({ children }) => {
     if (isEmpty) {
       setIsEmpty(false);
     }
-    console.log(el);
+    //console.log(el);
     if (el.priority === "most-significant") {
       addActivity(el, TODAY);
       setActivities1([...activities1, el]);

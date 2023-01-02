@@ -41,7 +41,7 @@ export const searchActivity = async (date) => {
   const respuesta = await getDocs(col);
   let docSearch = {};
   respuesta.forEach((doc) => {
-    console.log(doc.data());
+    //console.log(doc.data());
 
     if (doc.id === date) {
       docSearch = { ...doc.data(), id: doc.id };
@@ -59,8 +59,8 @@ export const searchActivity = async (date) => {
 };
 
 export const addActivity = async (el, id) => {
-  console.log(data.activities1);
-  console.log(el);
+  //console.log(data.activities1);
+  //console.log(el);
   if (el.priority === "most-significant") {
     data.activities1 = [...data.activities1, el];
     await updateDoc(doc(col, id), {
@@ -89,7 +89,7 @@ export const updateStateActivity = async (id, completed, priority) => {
     for (let i = 0; i < data.activities1.length; i++) {
       if (data.activities1[i].id === id) {
         data.activities1[i].completed = completed;
-        console.log(data.activities1[i]);
+        //console.log(data.activities1[i]);
       }
     }
 
@@ -100,7 +100,7 @@ export const updateStateActivity = async (id, completed, priority) => {
     for (let i = 0; i < data.activities2.length; i++) {
       if (data.activities2[i].id === id) {
         data.activities2[i].completed = completed;
-        console.log(data.activities2[i]);
+        //console.log(data.activities2[i]);
       }
     }
 
@@ -111,7 +111,7 @@ export const updateStateActivity = async (id, completed, priority) => {
     for (let i = 0; i < data.activities3.length; i++) {
       if (data.activities3[i].id === id) {
         data.activities3[i].completed = completed;
-        console.log(data.activities3[i]);
+        //console.log(data.activities3[i]);
       }
     }
 
@@ -122,7 +122,7 @@ export const updateStateActivity = async (id, completed, priority) => {
     for (let i = 0; i < data.activities4.length; i++) {
       if (data.activities4[i].id === id) {
         data.activities4[i].completed = completed;
-        console.log(data.activities4[i]);
+        //console.log(data.activities4[i]);
       }
     }
 

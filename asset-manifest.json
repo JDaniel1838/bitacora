@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/bitacora/static/css/main.b1860f7b.css",
+    "main.js": "/bitacora/static/js/main.74aefdc6.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/bitacora/static/js/787.c4e7f8f9.chunk.js",
+    "static/media/bootstrap-icons.woff?": "/bitacora/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
+    "static/media/bootstrap-icons.woff2?": "/bitacora/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
+    "index.html": "/bitacora/index.html",
+    "main.b1860f7b.css.map": "/bitacora/static/css/main.b1860f7b.css.map",
+    "main.74aefdc6.js.map": "/bitacora/static/js/main.74aefdc6.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/bitacora/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1860f7b.css",
+    "static/js/main.74aefdc6.js"
+  ]
+}
